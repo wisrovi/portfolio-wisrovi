@@ -1,0 +1,110 @@
+{
+  "name": "Wisrovi Rodriguez - Ingeniero MLOps & Especialista en IA",
+  "short_name": "Wisrovi Rodriguez",
+  "description": "Portafolio profesional de Wisrovi Rodriguez, experto en inteligencia artificial, visión por computadora y desarrollo de software.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3B82F6",
+  "icons": [
+    {
+      "src": "/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Proyectos",
+      "short_name": "Proyectos",
+      "description": "Ver proyectos destacados de Wisrovi Rodriguez",
+      "url": "/projects",
+      "icons": [{ "src": "/icons/projects.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Librerías",
+      "short_name": "Librerías",
+      "description": "Explorar librerías desarrolladas por Wisrovi Rodriguez",
+      "url": "/libraries",
+      "icons": [{ "src": "/icons/libraries.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Contacto",
+      "short_name": "Contacto",
+      "description": "Contactar a Wisrovi Rodriguez",
+      "url": "/contact",
+      "icons": [{ "src": "/icons/contact.png", "sizes": "192x192" }]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/home.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Página de inicio de Wisrovi Rodriguez"
+    },
+    {
+      "src": "/screenshots/projects.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Proyectos destacados de Wisrovi Rodriguez"
+    },
+    {
+      "src": "/screenshots/libraries.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Librerías desarrolladas por Wisrovi Rodriguez"
+    }
+  ],
+  "orientation": "portrait-primary",
+  "categories": ["business", "education", "productivity", "technology"],
+  "lang": "es",
+  "dir": "ltr",
+  "prefer_related_applications": false
+}
