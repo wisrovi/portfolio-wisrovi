@@ -28,7 +28,7 @@ Este proyecto es un sitio web interactivo que muestra el perfil profesional, pro
 
 1. Clona el repositorio:
 ```bash
-git clone https://github.com/tu-usuario/portfolio-wisrovi.git
+git clone https://github.com/wisrovi/portfolio-wisrovi.git
 cd portfolio-wisrovi
 ```
 
