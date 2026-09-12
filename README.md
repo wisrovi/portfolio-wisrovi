@@ -146,7 +146,7 @@ portfolio-wisrovi/
 - **Affiliation:** wisrovi-suit AI Research Initiative, Badajoz, Spain
 - **Degrees:**
   - M.Sc. in Artificial Intelligence — *Valencian International University (VIU), Spain* (2024–2025)
-  - B.Sc. in Electronic Engineering (*Magna cum laude*) — *Universidad de Investigación y Desarrollo (UDI), Colombia* (2009–2014)
+  - B.Sc. in Electronic Engineering — *Universidad de Investigación y Desarrollo (UDI), Colombia* (2010–2016)
 - **ORCID:** [0009-0005-0710-1861](https://orcid.org/0009-0005-0710-1861)
 - **PyPI:** [pypi.org/user/wisrovi](https://pypi.org/user/wisrovi/)
 - **GitHub:** [github.com/wisrovi](https://github.com/wisrovi)
