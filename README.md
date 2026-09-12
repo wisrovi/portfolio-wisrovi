@@ -61,19 +61,17 @@ flowchart TD
 
 ---
 
-## 📦 Software & PyPI Catalog (23 Published Packages)
+## 📦 Software & PyPI Catalog (23 Verified Packages)
 
-The author has engineered, tested, and published 23 independent packages on PyPI under the `wisrovi` namespace:
+The author has engineered, tested, and published 23 official packages on PyPI under the `wisrovi` namespace (structured across the Binary Universe architecture):
 
-| Category | Published PyPI Packages | Core Engineering Highlights |
+| Category | Official PyPI Packages | Core Engineering Highlights |
 | :--- | :--- | :--- |
-| **Agentic AI & Pipelines** | `wpipe`, `wagents` | Declarative execution engine, context-dependent step injection, multi-agent orchestration |
-| **Model Context Protocol** | `wpipe-mcp`, `wyoloservice-mcp`, `wredis-mcp`, `wmongo-mcp`, `wpostgres-mcp`, `wkafka-mcp`, `wminio-mcp` | FastMCP servers bridging LLM agents with production datastores and training clusters via JSON-RPC |
-| **Distributed Messaging** | `wkafka`, `wrabbitmq` | Zero-boilerplate decorators, Avro/JSON serialization, resilient auto-reconnect |
-| **Database Persistence** | `wredis`, `wmongo`, `wpostgresql`, `wsqlite` | Thread-safe connection pooling, schema validations, robust CRUD abstractions |
-| **Object Storage** | `wminio` | S3-compatible asset management, pre-signed URLs, stream uploads |
-| **DevOps & Infrastructure**| `wcontainer`, `wportforward`, `wsecurity`, `wmail`, `wlogger` | Docker SDK management, dynamic port forwarding, cryptographic hashing, logging |
-| **Developer Command Center**| `w-cli` | Unified interactive Rich TUI CLI to initialize, scaffold, and manage the full ecosystem |
+| **Pipeline Core & Extensions** | `wpipe`, `wpipe-steps`, `wpipe-plugins`, `wdecorators`, `wutils` | Declarative execution engine, SQLite WAL state persistence, GIL bypass, dynamic plugins, exponential backoff retries |
+| **Model Context Protocol (MCP)** | `wpipe-mcp`, `wyoloservice-mcp`, `wredis-mcp`, `wsqlite-mcp`, `wpostgresql-mcp`, `wkafka-mcp` | 6 official FastMCP servers bridging LLM agents (Claude, Antigravity, Cursor) with production clusters and datastores via JSON-RPC |
+| **Databases & Caching** | `wredis`, `wsqlite`, `wpostgresql`, `wmongo`, `wclickhouse` | Atomic distributed locks, TableSync schema generation, ACID pooler, reactive Pydantic models, columnar OLAP |
+| **Distributed Streaming & Security** | `wkafka`, `wauth`, `wFabricSecurity` | Declarative Kafka streams, AES-256 machine-salted cryptographic vault, Hyperledger Fabric ECDSA P-256 Zero Trust |
+| **MLOps & Signal Processing** | `wyolo`, `wcontainer`, `wisrovi-python`, `ProcessAudio` | Automated YOLO/MLflow/S3 training wrapper, Docker GPU quota governor, foundational math, DSP Mel-spectrograms |
 
 ---
 
