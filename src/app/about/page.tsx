@@ -127,7 +127,7 @@ const About = () => {
                     <strong>Máster Universitario en Inteligencia Artificial (2023 - 2024):</strong> Universidad Internacional de Valencia (VIU), España. Énfasis en redes neuronales profundas, visión artificial avanzada e inferencia probabilística.
                   </li>
                   <li>
-                    <strong>Ingeniería Electrónica (2010 - 2016):</strong> Universidad de Investigación y Desarrollo (UDI), Colombia. Graduado con distinción en Proyecto de Grado <em>Magna cum laude</em> por diseño e implementación de instrumentación y procesamiento digital de señales.
+                    <strong>Ingeniería Electrónica (2010 - 2016):</strong> Universidad de Investigación y Desarrollo (UDI), Colombia. Énfasis en instrumentación electrónica, automatización y procesamiento digital de señales.
                   </li>
                 </ul>
 
