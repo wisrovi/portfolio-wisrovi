@@ -159,8 +159,7 @@ const translations: Translations = {
   }
 };
 
-// Contexto para el idioma
-import { createContext, useContext } from 'react';
+import { createContext, useContext, ReactNode } from 'react';
 
 type LanguageContextType = {
   currentLanguage: string;
@@ -177,7 +176,7 @@ const LanguageContext = createContext<LanguageContextType>({
 export const useLanguage = () => useContext(LanguageContext);
 
 // Proveedor de idioma
-export const LanguageProvider = ({ children }) => {
+export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const [currentLanguage, setCurrentLanguage] = useState('es');
   const router = useRouter();
   
