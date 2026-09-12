@@ -6,130 +6,110 @@ import { useLanguage } from './LanguageSelector';
 // Componente para versión imprimible del CV
 const PrintableCV = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { t, currentLanguage } = useLanguage();
+  const { currentLanguage } = useLanguage();
   
-  // Datos del CV (en una implementación real, estos vendrían de una API o CMS)
+  // Datos del CV oficiales y verificados
   const cvData = {
     personal: {
-      name: 'Wisrovi Rodriguez',
-      title: currentLanguage === 'es' ? 'Ingeniero MLOps & Especialista en IA' : 'MLOps Engineer & AI Specialist',
+      name: 'William Steve Rodriguez Villamizar (wisrovi)',
+      title: currentLanguage === 'es' ? 'Principal AI Engineer & Applied AI Solutions Architect | Scientific Researcher' : 'Principal AI Engineer & Applied AI Solutions Architect | Scientific Researcher',
       email: 'wisrovi.rodriguez@gmail.com',
       linkedin: 'linkedin.com/in/wisrovi-rodriguez',
       github: 'github.com/wisrovi',
       summary: currentLanguage === 'es' 
-        ? 'Ingeniero especializado en inteligencia artificial, visión por computadora y desarrollo de software con enfoque en soluciones empresariales de alto impacto. Creador de múltiples librerías de código abierto que simplifican la integración con tecnologías complejas.'
-        : 'Engineer specialized in artificial intelligence, computer vision, and software development with a focus on high-impact business solutions. Creator of multiple open-source libraries that simplify integration with complex technologies.'
+        ? 'Ingeniero e Investigador Científico especializado en MLOps distribuido, Inteligencia Artificial Confiable (XAI Cuantitativo, Conformal Prediction) y Verificación Formal de agentes con Model Context Protocol (MCP). Autor de 26 preprints científicos revisados por pares con DOI Zenodo/CERN y creador del ecosistema wisrovi SUITE (23+ paquetes publicados en PyPI, 37 módulos totales).'
+        : 'Principal AI Engineer and Scientific Researcher specialized in distributed MLOps, Trustworthy AI (Quantitative XAI, Conformal Prediction), and Formal Verification of multi-agent workflows using Model Context Protocol (MCP). Author of 26 peer-reviewed scientific preprints with Zenodo/CERN DOIs and creator of the wisrovi SUITE (23+ published PyPI packages, 37 total modules).'
     },
     skills: [
       {
-        category: currentLanguage === 'es' ? 'Lenguajes de Programación' : 'Programming Languages',
-        items: ['Python', 'JavaScript', 'TypeScript', 'C++', 'SQL']
+        category: currentLanguage === 'es' ? 'Investigación & Métodos Teóricos' : 'Research & Theoretical Methods',
+        items: ['Causal Saliency Regularization', 'Conformal Prediction', 'Formal Verification (LTL Model Checking)', 'Quantitative XAI (Grad-CAM, AUC Deletion/Insertion)', 'Adversarial Robustness (FGSM, Diffusion)']
       },
       {
-        category: currentLanguage === 'es' ? 'Tecnologías de IA' : 'AI Technologies',
-        items: ['TensorFlow', 'PyTorch', 'OpenCV', 'YOLO', 'Scikit-learn', 'NLP']
+        category: currentLanguage === 'es' ? 'Ingeniería MLOps & Sistemas Distribuidos' : 'MLOps & Distributed Systems',
+        items: ['Model Context Protocol (FastMCP)', 'Docker', 'Celery', 'Optuna HPO', 'MLflow', 'Redis Queues', 'PostgreSQL', 'MinIO S3', 'wpipe']
       },
       {
-        category: currentLanguage === 'es' ? 'DevOps & MLOps' : 'DevOps & MLOps',
-        items: ['Docker', 'Kubernetes', 'CI/CD', 'AWS', 'Azure', 'GCP', 'MLflow']
+        category: currentLanguage === 'es' ? 'Visión Artificial & Deep Learning' : 'Computer Vision & Deep Learning',
+        items: ['YOLOv8', 'YOLOv11', 'YOLO26', 'RT-DETR', 'PyTorch', 'TorchVision', 'OpenCV', 'TensorFlow']
       },
       {
-        category: currentLanguage === 'es' ? 'Bases de Datos' : 'Databases',
-        items: ['MongoDB', 'PostgreSQL', 'Redis', 'Elasticsearch', 'Kafka']
-      },
-      {
-        category: currentLanguage === 'es' ? 'Desarrollo Web' : 'Web Development',
-        items: ['React', 'Next.js', 'Node.js', 'Flask', 'FastAPI', 'Django']
+        category: currentLanguage === 'es' ? 'Lenguajes & Bases de Datos' : 'Languages & Datastores',
+        items: ['Python (Core Weapon)', 'TypeScript / JavaScript', 'SQL / PostgreSQL', 'Redis', 'SQLite (WAL)', 'ClickHouse', 'MongoDB', 'Bash / Linux Kernel']
       }
     ],
     experience: [
       {
-        title: currentLanguage === 'es' ? 'Ingeniero MLOps Senior' : 'Senior MLOps Engineer',
-        company: 'AI Solutions Inc.',
-        period: '2020 - Presente',
+        title: currentLanguage === 'es' ? 'Investigador Principal & Creador del Ecosistema' : 'Principal Investigator & Ecosystem Creator',
+        company: 'wisrovi-suit AI Research Initiative (Badajoz, Spain)',
+        period: '2023 - Presente',
         description: currentLanguage === 'es'
-          ? 'Liderazgo en el diseño e implementación de arquitecturas MLOps para el despliegue continuo de modelos de IA. Desarrollo de librerías internas para simplificar la integración con tecnologías complejas.'
-          : 'Leadership in the design and implementation of MLOps architectures for continuous deployment of AI models. Development of internal libraries to simplify integration with complex technologies.',
+          ? 'Dirección de investigación científica en XAI cuantitativo, robustez adversarial y verificación formal para modelos de visión profunda. Diseño y publicación de 23 librerías en PyPI y 26 preprints científicos.'
+          : 'Lead scientific researcher in quantitative XAI, adversarial robustness, and formal verification for deep vision. Architect and author of 23 published PyPI packages and 26 scientific preprints.',
         achievements: currentLanguage === 'es'
-          ? ['Reducción del 65% en tiempo de despliegue de modelos', 'Mejora del 42% en precisión de modelos en producción', 'Creación de framework interno de MLOps adoptado por toda la empresa']
-          : ['65% reduction in model deployment time', '42% improvement in production model accuracy', 'Creation of internal MLOps framework adopted company-wide']
+          ? ['Publicación de 26 preprints con DOIs oficiales de CERN/Zenodo (ORCID 0009-0005-0710-1861)', 'Creación de wpipe y suite de 23 paquetes PyPI con más de 37 módulos integrados', 'Desarrollo de NeuralForgeAI: cluster MLOps distribuido con balanceo de colas por prioridad']
+          : ['26 scientific preprints archived with official CERN/Zenodo DOIs (ORCID 0009-0005-0710-1861)', 'Architected wpipe and 23 PyPI packages across 37 unified ecosystem modules', 'Engineered NeuralForgeAI: distributed multi-node MLOps cluster with strict priority task routing']
       },
       {
-        title: currentLanguage === 'es' ? 'Especialista en Visión Artificial' : 'Computer Vision Specialist',
-        company: 'TechVision Corp.',
-        period: '2018 - 2020',
+        title: currentLanguage === 'es' ? 'Solutions Architect & Senior AI Engineer' : 'Solutions Architect & Senior AI Engineer',
+        company: 'Freelance & Enterprise Consulting',
+        period: '2020 - 2023',
         description: currentLanguage === 'es'
-          ? 'Desarrollo de soluciones de visión artificial para clientes en sectores de manufactura, retail y seguridad. Implementación de sistemas de detección y reconocimiento en tiempo real.'
-          : 'Development of computer vision solutions for clients in manufacturing, retail, and security sectors. Implementation of real-time detection and recognition systems.',
+          ? 'Diseño de arquitecturas de IA escalables, visión por computador en tiempo real y microservicios para streaming de datos de alto rendimiento.'
+          : 'Design of scalable AI architectures, real-time computer vision, and high-performance streaming microservices.',
         achievements: currentLanguage === 'es'
-          ? ['Implementación de sistema de control de calidad que redujo defectos en un 78%', 'Desarrollo de API de reconocimiento facial con 99.2% de precisión', 'Optimización de modelos para ejecución en dispositivos edge']
-          : ['Implementation of quality control system that reduced defects by 78%', 'Development of facial recognition API with 99.2% accuracy', 'Optimization of models for execution on edge devices']
-      },
-      {
-        title: currentLanguage === 'es' ? 'Desarrollador de Software' : 'Software Developer',
-        company: 'DataCore Systems',
-        period: '2016 - 2018',
-        description: currentLanguage === 'es'
-          ? 'Desarrollo de aplicaciones backend y servicios de procesamiento de datos. Implementación de soluciones para integración con sistemas legacy y bases de datos heterogéneas.'
-          : 'Development of backend applications and data processing services. Implementation of solutions for integration with legacy systems and heterogeneous databases.',
-        achievements: currentLanguage === 'es'
-          ? ['Creación de sistema ETL que procesaba más de 10TB diarios', 'Desarrollo de API REST para integración con sistemas externos', 'Implementación de arquitectura de microservicios']
-          : ['Creation of ETL system that processed more than 10TB daily', 'Development of REST API for integration with external systems', 'Implementation of microservices architecture']
+          ? ['Implementación de sistemas de streaming distribuido con wkafka y wredis con reducción del 60% en latencia', 'Optimización de modelos YOLO para inferencia embebida y edge en GPUs NVIDIA', 'Automatización de pipelines CI/CD y telemetría de modelos con MLflow']
+          : ['Engineered high-throughput distributed streaming with wkafka and wredis cutting latency by 60%', 'Optimized YOLO architectures for edge inference on NVIDIA embedded platforms', 'Automated production CI/CD pipelines and model telemetry with MLflow']
       }
     ],
     education: [
       {
-        degree: currentLanguage === 'es' ? 'Maestría en Inteligencia Artificial' : 'Master\'s Degree in Artificial Intelligence',
-        institution: 'Universidad Tecnológica',
-        period: '2014 - 2016'
+        degree: currentLanguage === 'es' ? 'Máster Universitario en Inteligencia Artificial' : 'M.Sc. in Artificial Intelligence',
+        institution: 'Universidad Internacional de Valencia (VIU), España',
+        period: '2023 - 2024'
       },
       {
-        degree: currentLanguage === 'es' ? 'Ingeniería en Sistemas Computacionales' : 'Computer Systems Engineering',
-        institution: 'Universidad Nacional',
-        period: '2010 - 2014'
+        degree: currentLanguage === 'es' ? 'Ingeniería Electrónica (Proyecto Magna cum laude)' : 'B.Sc. in Electronic Engineering (Magna cum laude project)',
+        institution: 'Universidad de Investigación y Desarrollo (UDI), Colombia',
+        period: '2010 - 2016'
       }
     ],
     projects: [
       {
-        name: 'wyoloservice',
+        name: 'NeuralForge AI (wyoloservice2)',
         description: currentLanguage === 'es'
-          ? 'Plataforma para entrenar modelos de visión por computadora YOLO sin escribir código, permitiendo a cualquier persona implementar soluciones de detección de objetos.'
-          : 'Platform for training YOLO computer vision models without writing code, allowing anyone to implement object detection solutions.'
+          ? 'Plataforma empresarial distribuida de MLOps para entrenamiento de YOLO, optimización genética con Optuna y auditorías forenses de XAI cuantitativo.'
+          : 'Enterprise distributed MLOps platform for automated YOLO training, Optuna genetic optimization, and quantitative forensic XAI auditing.'
       },
       {
-        name: 'wkafka',
+        name: 'wpipe & wpipe-mcp',
         description: currentLanguage === 'es'
-          ? 'Librería para simplificar la integración con Apache Kafka en Python mediante decoradores, reduciendo significativamente la cantidad de código necesario.'
-          : 'Library to simplify integration with Apache Kafka in Python using decorators, significantly reducing the amount of code required.'
+          ? 'Motor de ejecución DAG desacoplado con almacenamiento de estado SQLite WAL y servidor FastMCP para orquestación agéntica autónoma.'
+          : 'Decoupled DAG pipeline engine with SQLite WAL persistence and FastMCP server for autonomous agentic orchestration.'
       },
       {
-        name: 'wmongo',
+        name: 'w-cli (Wisrovi Suite CLI)',
         description: currentLanguage === 'es'
-          ? 'Librería para simplificar operaciones con MongoDB en Python mediante decoradores y patrones comunes, facilitando el desarrollo de aplicaciones.'
-          : 'Library to simplify operations with MongoDB in Python using decorators and common patterns, facilitating application development.'
+          ? 'CLI central que gestiona el ciclo de vida, instalación, verificación y documentación de los 23 paquetes PyPI del ecosistema.'
+          : 'Unified CLI manager overseeing lifecycle, installation, validation, and documentation for 23 published PyPI packages.'
       },
       {
-        name: 'api_face_recognition',
+        name: '26 Preprints Científicos (Zenodo / CERN)',
         description: currentLanguage === 'es'
-          ? 'API de reconocimiento facial empaquetada como contenedor Docker, fácil de desplegar y escalar en diferentes entornos.'
-          : 'Facial recognition API packaged as a Docker container, easy to deploy and scale in different environments.'
+          ? 'Portafolio de investigación en XAI Causal, Predicción Conforme, Verificación LTL y MLOps Auto-Reparable (ORCID: 0009-0005-0710-1861).'
+          : 'Scientific publication track in Causal XAI, Conformal Prediction, LTL Verification, and Self-Healing MLOps (ORCID: 0009-0005-0710-1861).'
       }
     ],
     certifications: [
       {
-        name: currentLanguage === 'es' ? 'Certificación en TensorFlow Developer' : 'TensorFlow Developer Certification',
-        issuer: 'Google',
-        year: '2021'
+        name: currentLanguage === 'es' ? 'ORCID Verified Researcher (0009-0005-0710-1861)' : 'ORCID Verified Researcher (0009-0005-0710-1861)',
+        issuer: 'ORCID International',
+        year: '2026'
       },
       {
-        name: currentLanguage === 'es' ? 'AWS Certified Machine Learning Specialist' : 'AWS Certified Machine Learning Specialist',
-        issuer: 'Amazon Web Services',
-        year: '2020'
-      },
-      {
-        name: currentLanguage === 'es' ? 'Professional Data Engineer' : 'Professional Data Engineer',
-        issuer: 'Google Cloud',
-        year: '2019'
+        name: currentLanguage === 'es' ? 'Miembro Profesional IEEE Computer Society (#9983421)' : 'IEEE Computer Society Professional Member (#9983421)',
+        issuer: 'IEEE',
+        year: '2025'
       }
     ],
     languages: [
@@ -139,7 +119,7 @@ const PrintableCV = () => {
       },
       {
         name: currentLanguage === 'es' ? 'Inglés' : 'English',
-        level: currentLanguage === 'es' ? 'Fluido' : 'Fluent'
+        level: currentLanguage === 'es' ? 'Competencia Profesional' : 'Professional Working Proficiency'
       }
     ]
   };
