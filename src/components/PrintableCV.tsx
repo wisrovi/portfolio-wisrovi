@@ -69,7 +69,7 @@ const PrintableCV = () => {
         period: '2023 - 2024'
       },
       {
-        degree: currentLanguage === 'es' ? 'Ingeniería Electrónica (Proyecto Magna cum laude)' : 'B.Sc. in Electronic Engineering (Magna cum laude project)',
+        degree: currentLanguage === 'es' ? 'Ingeniería Electrónica' : 'B.Sc. in Electronic Engineering',
         institution: 'Universidad de Investigación y Desarrollo (UDI), Colombia',
         period: '2010 - 2016'
       }
